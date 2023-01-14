@@ -11,3 +11,5 @@ export enum ENEMIES_TYPE {
     SOLDIER= "soldier",
     MECH= "mech"
 }
+
+export const MAX_DISTANCE = 10000
