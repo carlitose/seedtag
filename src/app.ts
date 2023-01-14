@@ -13,3 +13,5 @@ app.post('/endpoint', (req: express.Request, res: express.Response) => {
 app.listen(3000, () => {
     console.log('Server in esecuzione sulla porta 3000');
 });
+
+export default app
