@@ -5,7 +5,8 @@
   "main": "dist/app.js",
   "scripts": {
     "start": "ts-node -r tsconfig-paths/register src/app.ts",
-    "test": "ts-node -r tsconfig-paths/register ./node_modules/jest/bin/jest.js"
+    "test": "ts-node -r tsconfig-paths/register ./node_modules/jest/bin/jest.js",
+    "build": "tsc --build --pretty"
   },
   "keywords": [],
   "author": "",

@@ -1,4 +1,4 @@
-import { calculate } from "./calclulate"
+import { calculate } from "./calculate"
 const inputOutputPairs = [
     { input: { "protocols": ["avoid-mech"], "scan": [{ "coordinates": { "x": 0, "y": 40 }, "enemies": { "type": "soldier", "number": 10 } }, { "coordinates": { "x": 0, "y": 80 }, "allies": 5, "enemies": { "type": "mech", "number": 1 } }] }, output: { "x": 0, "y": 40 } },
     { input: { "protocols": ["prioritize-mech"], "scan": [{ "coordinates": { "x": 0, "y": 40 }, "enemies": { "type": "soldier", "number": 10 } }, { "coordinates": { "x": 0, "y": 80 }, "allies": 5, "enemies": { "type": "mech", "number": 1 } }] }, output: { "x": 0, "y": 80 } },

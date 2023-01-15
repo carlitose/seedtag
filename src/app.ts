@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import { celebrate, errors } from 'celebrate';
 
 import { yvhRequestSchema } from './structure/schema'
-import { calculate } from './calclulate';
+import { calculate } from './calculate';
 
 const app = express();
 app.use(bodyParser.json());

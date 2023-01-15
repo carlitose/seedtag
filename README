@@ -1,0 +1,4 @@
+npm install
+npm run build
+docker build -t yvh:1.0 .
+docker run --init --rm -it -p 8888:8888 yvh:1.0
