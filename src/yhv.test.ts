@@ -1,4 +1,4 @@
-import { calculate } from './calculate';
+import { YHV } from './yhv';
 
 const inputOutputPairs = [
   {
@@ -84,10 +84,10 @@ const inputOutputPairs = [
   },
 ];
 
-describe('calculate', () => {
+describe('YHV', () => {
   inputOutputPairs.forEach((pair) => {
     it(`returns correct output for input: ${pair.input}`, () => {
-      expect(calculate(pair.input as any)).toEqual(pair.output);
+      expect(YHV(pair.input as any)).toEqual(pair.output);
     });
   });
 });

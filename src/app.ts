@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import { celebrate, errors } from 'celebrate';
 
 import { yvhRequestSchema } from './structure/schema';
-import { calculate } from './calculate';
+import { YHV } from './yhv';
 
 const app = express();
 app.use(bodyParser.json());
@@ -16,7 +16,7 @@ app.post(
   async (req: Request, res: Response) => {
     const jsonBody = req.body;
     console.log('New contact from the Alliance');
-    const coordinate = calculate(jsonBody);
+    const coordinate = YHV(jsonBody);
     console.log('For the force and Skywalker! Fire on ', coordinate);
     res.json(coordinate);
   },
