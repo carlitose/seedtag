@@ -7,15 +7,37 @@
   "plugins": [
     "@typescript-eslint",
     "import",
-    "prettier"
+    "prettier",
+    "jest"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
+  "env":{
+    "jest": true
+  },
   "rules": {
-    "prettier/prettier": "error"
-  }, 
-  "exclude": [
-    "jest.config.js"
-  ]
+    "prettier/prettier": "error",
+    "import/prefer-default-export": "off",
+    "no-underscore-dangle":"off",
+    "import/extensions": "off",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error",
+    "no-unused-vars":"off",
+    "@typescript-eslint/no-unused-vars": "error"
+  },
+  "ignorePatterns": [
+    "jest.config.js",
+    "dist/*"
+  ],
+  "settings":{
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "project": "<root>/src"
+      }
+    }
+  }
 }
