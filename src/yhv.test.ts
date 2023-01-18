@@ -82,6 +82,13 @@ const inputOutputPairs = [
     },
     output: { x: 0, y: 10 },
   },
+  {
+    input: {
+      protocols: ['closest-enemies', 'avoid-mech'],
+      scan: [],
+    },
+    output: { x: 0, y: 0 },
+  },
 ];
 
 describe('YHV', () => {

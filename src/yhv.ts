@@ -34,5 +34,5 @@ export const YHV = ({ protocols, scan }: YVHRequest): Coordinate => {
   if (protocols.includes(PROTOCOL.AVOID_MECH)) {
     scanArray = avoidMech(scanArray);
   }
-  return scanArray[0].coordinate;
+  return scanArray[0]?.coordinate || { x: 0, y: 0 };
 };
